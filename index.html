@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/js/script.js"></script>
+    </head>
+    
+	<body>
+	<div id="content">
+        <div id = "nav-bar">
+            <div id = "collapseButton"><img id="threelines" src="assets/img/collapsebutton.png"></div>
+            <input class = "search" type = "text" placeholder = "Search mail" name = "search">
+            <div id = "right-side">
+                <p>Dustin Chen</p>
+                <div id = "arrow-down"></div>
+                <div id = "circle"><img src="assets/img/profilePicEmpathy.jpg" width="55" height="55"></div>
+            </div>
+        </div>
+        
+        <div id = "left-container">
+            <div id = "tabs">
+                <div class="box 1">Inbox<div class="blue 1"></div>
+                </div>
+                <div class="box 2">All Mail<div class="blue 2"></div>
+                </div>
+                <div class="box 3">Drafts<div class="blue 3"></div>
+                </div>
+                <div class="box 4">Trash<div class="blue 4"></div>
+                </div>
+                <div class="box 5">Spam<div class="blue 5"></div>
+                </div>
+                <div class="box 6">Archive<div class="blue 6"></div>
+                </div>
+            </div>
+            <div id = "list">
+                <div class="mailcontainer one">
+                    <div class="smallcircle"><img src="assets/img/profilePicEmpathy.jpg" width="30" height="30"></div>
+                    <div class="title">Welcome to my homepage!</div>
+                    <div class="sender">Dustin Chen</div>
+                    <div class="mailbox">inbox</div>
+                    <div class="preview">Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit consectetur consectetur... </div>
+                </div>
+                <div class="mailcontainer two">
+                    <div class="smallcircle"><img src="assets/img/profilePicEmpathy.jpg" width="30" height="30"></div>
+                    <div class="title">About Me</div>
+                    <div class="sender">Dustin Chen</div>
+                    <div class="mailbox">drafts</div>
+                    <div class="preview">Hailing from the suburbs of Chicago, Dustin Matthew
+                        Chen was born on July...
+                    </div>
+                </div>
+                <div class="mailcontainer three">
+                    <div class="smallcircle"><img src="assets/img/profilePicEmpathy.jpg" width="30" height="30"></div>
+                    <div class="title">Programming Experience</div>
+                    <div class="sender">Dustin Chen</div>
+                    <div class="mailbox">archive</div>
+                    <div class="preview">EMPLOYERS CLICK HERE:
+                        Here's my resume and a link to my github... </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="letter one">
+                <div id = "biggercircle"><img src="assets/img/profilePicEmpathy.jpg" width="64" height="64"></div>
+                <div class="title">Welcome to my homepage!</div>
+                <div class="sender">Dustin Chen</div>
+                <div class="message">
+                    <p>This website is an email-themed personal website. The theme is inspired by a front-end coding challenge I got when I first started learning web development – I wasn’t skilled enough to complete the assignment back then, but now I can!</p>
+                    <p>The three most significant features of this website:</p>
+                    <p>1.) The main window for the email dynamically changes size (implemented using $(window).resize). This lets the email expand to fit different screen sizes, and it also scales with the web browser when it is resized.</p>
+                    <p>2.) Clicking 3 different emails will make different emails pop up on the screen. Clicking the collapse button on the top left of the screen, in the nav bar, cycles between 3 different screen layouts. These two things were both done using the jquery 
+                        .show and .hide commands along with .css to modify the positioning. Notice the main email window expands to fill the empty space when a menu is collapsed.</p>
+                    <p>3.) Small pseudo-selector/clicking stuff. Hovering over the collapse button, the different inboxes, and different emails produces different shadows/borders/cursor effects. Clicking an inbox will make that inbox change to blue font and also produces 
+                        a border to the left. Unfortunately I haven’t implemented the inbox filtering functionality yet.</p>  
+                </div>
+            </div>
+            <div class="letter two">
+                <div id = "biggercircle"><img src="assets/img/profilePicEmpathy.jpg" width="64" height="64"></div>
+                <div class="title">About Me</div>
+                <div class="sender">Dustin Chen</div>
+                <div class="message"><p>Dustin Matthew Chen was born on July 14, 1999. He lived in China for 2 years, then on the outskirts of the city of Aurora, before moving
+                    a few miles away into the city of Naperville, where he spent his formative years.</p>
+                    <p>Ok it got kinda annoying speaking about myself in 3rd person. I went to Neuqua Valley High School, I did pretty well in school, took a lot of AP classes, and was involved in several
+                        extracurricular activities. Most important among these was orchestra and ultimate frisbee. Video games were also a big part of my life.                        
+                    </p>
+                    <p>Now I'm at the University of California, Berkeley. I'm studying Computer Science (and maybe something Applied Math related). My hobbies have come and gone - I continued playing frisbee up until this semester,
+                        but now I'm just playing intramural volleyball. I'm part of a dance organization called AFX, which has kinda replaced orchestra.
+                    </p>
+                    <p>Social Media:
+                    <a href="https://www.facebook.com/haellno">Facebook</a>
+                    <a href="https://www.linkedin.com/in/dustin-chen-0bb183133/">LinkedIn</a>
+                    </p>
+                </div>
+            </div>
+            <div class="letter three">
+                <div id = "biggercircle"><img src="assets/img/profilePicEmpathy.jpg" width="64" height="64"></div>
+                <div class="title">Programming Experience</div>
+                <div class="sender">Dustin Chen</div>
+                <div class="message">
+                    <p>EMPLOYERS CLICK HERE: Here's my <a href="assets/Resume Spring Career Fair.pdf">resume</a> and a <a href="https://github.com/dustinchengithub">link</a> to my github.
+                    </p>
+            </div>
+            </div>
+        </div>
+	</div>
+	</body>
+	
+</html>
